@@ -1,0 +1,26 @@
+{{ $items := slice }}
+{{ if eq .Section "features" }}
+  {{ $items = first 3 (where site.RegularPages "Section" "features") }}
+{{ else }}
+  {{ $items = first 3 (where site.RegularPages "Section" "blog") }}
+{{ end }}
+
+<ul class="flex flex-col gap-y-6">
+  {{ range $items }}
+    <li class="group flex flex-col items-center gap-x-4 gap-y-4 sm:flex-row">
+      <a href="{{ .RelPermalink }}" class="inline-block h-[100px] w-full overflow-hidden rounded-[5px] sm:w-[150px]">
+        <img src="{{ .Params.image }}" alt="{{ .Title }}" width="150" height="100"
+          class="h-full w-full scale-100 object-cover transition-all duration-300 group-hover:scale-105" />
+      </a>
+      <div class="flex w-full flex-col gap-y-3 sm:w-auto sm:flex-1">
+        <a href="{{ .RelPermalink }}" class="flex items-center gap-[10px] text-sm hover:text-ColorBlue">
+          <i class="fa-regular fa-calendar"></i>
+          {{ .Date.Format "Jan 02, 2006" }}
+        </a>
+        <a href="{{ .RelPermalink }}" class="line-clamp-2 text-base font-semibold text-ColorBlack hover:text-ColorBlue">
+          {{ .Title }}
+        </a>
+      </div>
+    </li>
+  {{ end }}
+</ul>
