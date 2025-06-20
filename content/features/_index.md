@@ -1,3 +1,3 @@
 +++
-title = "Features2"
+title = "Features"
 +++

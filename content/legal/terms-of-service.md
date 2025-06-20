@@ -1,14 +1,36 @@
 ---
-title: "Terms of Service"
+title: "Ketentuan Layanan"
 url: "/terms-of-service"
 slug: "terms-of-service"
 layout: "page"
+summary: "Ketentuan penggunaan situs Skoolink yang menjelaskan batasan, larangan, dan hak penyedia layanan terhadap konten dan pengguna situs."
+image: "/img/logoskoolink.svg"
 ---
 
-**skoolink Terms of Service**
+###### Ketentuan Layanan Skoolink
 
-By accessing {{< site-title >}}, you agree to use the content responsibly and not for any illegal or harmful purposes.
+Dengan mengakses situs **Skoolink**, Anda dianggap telah menyetujui untuk menggunakan seluruh konten dan layanan kami secara bertanggung jawab dan tidak untuk tujuan yang melanggar hukum atau merugikan pihak lain.
 
-Copying or redistributing content from this site without permission is prohibited. We reserve the right to modify or terminate any part of the service without prior notice.
+---
 
-If you do not agree with these terms, please do not use our website.
+###### Hak Cipta dan Distribusi
+
+Seluruh konten yang terdapat di situs ini dilindungi oleh hak cipta. Dilarang menyalin, menyebarluaskan, atau menggunakan kembali konten tanpa izin tertulis dari pihak Skoolink.
+
+---
+
+###### Perubahan Layanan
+
+Kami berhak untuk mengubah, menghentikan, atau menghapus sebagian atau seluruh layanan di situs ini kapan saja tanpa pemberitahuan terlebih dahulu.
+
+---
+
+###### Persetujuan Penggunaan
+
+Jika Anda tidak menyetujui ketentuan layanan ini, kami sarankan untuk tidak menggunakan situs kami lebih lanjut.
+
+Untuk pertanyaan terkait ketentuan ini, silakan hubungi kami melalui halaman [Hubungi Kami](/contact).
+
+---
+
+**Terima kasih telah menggunakan layanan Skoolink secara bijak dan bertanggung jawab.**

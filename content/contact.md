@@ -1,8 +1,10 @@
----
-title: "Contact"
-url: "/contact"
-layout: "contact"
----
++++
+title = "Contact"
+url = "/contact"
+layout = "contact"
+email = "hello@skoolink.id"
+phone = "+62 877-0101-1100"
++++
 **Hubungi Kami**
 
 Kami dengan senang hati menerima pesan dari Anda!

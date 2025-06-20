@@ -1,0 +1,39 @@
++++
+title = "Permudah Operasional Sekolah dengan Satu Aplikasi"
+summary = "Skoolink membantu sekolah mengelola absensi, PPDB, keuangan, akademik, dan komunikasi dalam satu platform terpadu."
+main_image = "/img/mockup-skoolink.png"
+note = "No credit card is required."
+type = "section"
+layout = "none" 
+
+[[avatars]]
+src = "/img/hero-avater-1.jpg"
+alt = "hero-avatar-img-1"
+
+[[avatars]]
+src = "/img/hero-avater-2.jpg"
+alt = "hero-avatar-img-2"
+
+[[avatars]]
+src = "/img/hero-avater-3.jpg"
+alt = "hero-avatar-img-3"
+
+[[cta]]
+label = "Coba Gratis"
+url = "#"
+style = "primary"
+
+[[cta]]
+label = "Jadwalkan Demo"
+url = "#"
+style = "secondary"
+
+[[stats]]
+label = "Happy Customers"
+value = "64,739"
+
+[[stats]]
+label = "Rating"
+value = "4.8/5"
+stars = 5
++++

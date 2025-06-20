@@ -1,7 +1,35 @@
 baseURL = 'https://skoolink.id/'
 languageCode = 'en-us'
 title = 'Skoolink'
-theme = 'skoolink'
+theme = 'skoolink' 
+
+[params]
+logo = "/img/logoskoolink.svg"
+favicon = "/img/favicon.png"
+defaultImage = "/img/logo_skoolink.og.png" 
+email = "hello@skoolink.id"
+phone = "+62 877-0101-1100"
+ 
+  [[params.social]]
+  name = "twitter"
+  url = "https://twitter.com"
+  icon = "fa-x-twitter"
+
+  [[params.social]]
+  name = "facebook"
+  url = "https://www.facebook.com/"
+  icon = "fa-facebook-f"
+
+  [[params.social]]
+  name = "instagram"
+  url = "https://www.instagram.com/"
+  icon = "fa-instagram"
+
+  [[params.social]]
+  name = "github"
+  url = "https://www.github.com/"
+  icon = "fa-github"
+
 
 [menu]
 
@@ -84,27 +112,6 @@ theme = 'skoolink'
   name = "Password Reset"
   url = "/reset-password"
   weight = 4
-
-[params]
-  [[params.social]]
-  name = "twitter"
-  url = "https://twitter.com"
-  icon = "fa-x-twitter"
-
-  [[params.social]]
-  name = "facebook"
-  url = "https://www.facebook.com/"
-  icon = "fa-facebook-f"
-
-  [[params.social]]
-  name = "instagram"
-  url = "https://www.instagram.com/"
-  icon = "fa-instagram"
-
-  [[params.social]]
-  name = "github"
-  url = "https://www.github.com/"
-  icon = "fa-github"
 
 paginate = 10
 

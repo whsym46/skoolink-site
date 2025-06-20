@@ -2,11 +2,11 @@
 
 {{ $current := .RelPermalink }}
 {{ if not (or
-  (hasPrefix $current "/contact")
-  (hasPrefix $current "/privacy-policy")
-  (hasPrefix $current "/terms-of-service")
-  (hasPrefix $current "/about-us")
-  (hasPrefix $current "/disclaimer")
+(hasPrefix $current "/contact")
+(hasPrefix $current "/privacy-policy")
+(hasPrefix $current "/terms-of-service")
+(hasPrefix $current "/about-us")
+(hasPrefix $current "/disclaimer")
 ) }}
 <!--...::: Breadcrumb Section Start :::... -->
 <section class="section-breadcrumb">
@@ -42,14 +42,32 @@
             <!-- Blog Post Article -->
             <article class="jos overflow-hidden bg-white">
               <div class="mb-7 block overflow-hidden rounded-[10px]">
+
+                {{ $current := .RelPermalink }}
+                {{ if not (or
+                (hasPrefix $current "/contact")
+                (hasPrefix $current "/privacy-policy")
+                (hasPrefix $current "/terms-of-service")
+                (hasPrefix $current "/about-us")
+                (hasPrefix $current "/disclaimer")
+                ) }}
                 <a href="{{ .RelPermalink }}" class="block overflow-hidden">
                   <img src="{{ .Params.image }}" alt="{{ .Title }}" width="856" height="450"
                     class="h-auto w-full scale-100 object-cover transition-all duration-300 group-hover:scale-105" />
-                </a>
+                </a>{{ end }}
               </div>
               <!-- Blog Details Wrapper -->
               <div class="px-[30px]">
                 <!-- Blog Post Meta -->
+
+                {{ $current := .RelPermalink }}
+                {{ if not (or
+                (hasPrefix $current "/contact")
+                (hasPrefix $current "/privacy-policy")
+                (hasPrefix $current "/terms-of-service")
+                (hasPrefix $current "/about-us")
+                (hasPrefix $current "/disclaimer")
+                ) }}
                 <ul class="flex flex-wrap items-center gap-4 text-base font-semibold sm:gap-6">
                   <li>
                     <a href="{{ .RelPermalink }}" class="flex items-center gap-x-[10px] hover:text-ColorBlue">
@@ -77,7 +95,7 @@
                   </li>
                   {{ end }}
                 </ul>
-
+                {{ end }}
                 <!-- Blog Post Meta -->
                 <!-- Blog Details Content Block-->
                 <div>
@@ -85,9 +103,9 @@
                     class="mb-5 mt-8 line-clamp-2 font-body text-2xl font-bold leading-[1.4] -tracking-[1px] group-hover:text-ColorBlue lg:text-3xl">
                     {{ .Title }}
                   </h2>
-                  <p class="mb-7 last:mb-0">
+                  <div class="mb-7 prose prose-neutral [&>ul]:my-4 [&>ul]:list-disc [&>ul]:list-inside last:mb-0">
                     {{ .Content }}
-                  </p>
+                  </div>
 
                 </div>
                 <!-- Blog Details Content Block-->
@@ -96,6 +114,14 @@
             </article>
             <!-- Blog Post Article -->
 
+            {{ $current := .RelPermalink }}
+            {{ if not (or
+            (hasPrefix $current "/contact")
+            (hasPrefix $current "/privacy-policy")
+            (hasPrefix $current "/terms-of-service")
+            (hasPrefix $current "/about-us")
+            (hasPrefix $current "/disclaimer")
+            ) }}
             <!-- Blog Events -->
             <div class="jos flex justify-between gap-x-8 px-[30px]">
               <div class="flex items-center gap-x-6">
@@ -136,7 +162,7 @@
                     <!-- Comment User Image -->
                     <div class="h-[80px] w-[80px] overflow-hidden rounded-full">
                       <img src="img/th-1/blog-comment-large-user-img-1.jpg" alt="blog-comment-large-user-img-1"
-                       class="h-[80px] w-[80px] object-cover" />
+                        class="h-[80px] w-[80px] object-cover" />
                     </div>
                     <!-- Comment User Image -->
                     <!-- Comment Content -->
@@ -174,8 +200,8 @@
                       <div class="flex gap-x-5">
                         <!-- Comment User Image -->
                         <div class="h-[50px] w-[50px] overflow-hidden rounded-full">
-                          <img src="img/th-1/blog-comment-small-user-img-1.jpg"
-                            alt="blog-comment-large-user-img-1" class="h-[50px] w-[50px] object-cover" />
+                          <img src="img/th-1/blog-comment-small-user-img-1.jpg" alt="blog-comment-large-user-img-1"
+                            class="h-[50px] w-[50px] object-cover" />
                         </div>
                         <!-- Comment User Image -->
                         <!-- Comment Content -->
@@ -215,7 +241,7 @@
                     <!-- Comment User Image -->
                     <div class="h-[80px] w-[80px] overflow-hidden rounded-full">
                       <img src="img/th-1/blog-comment-large-user-img-2.jpg" alt="blog-comment-large-user-img-1"
-                       class="h-[80px] w-[80px] object-cover" />
+                        class="h-[80px] w-[80px] object-cover" />
                     </div>
                     <!-- Comment User Image -->
                     <!-- Comment Content -->
@@ -302,6 +328,7 @@
                 </form>
               </div>
             </div>
+            {{ end }}
             <!-- Blog Comment Form -->
           </div>
         </div>

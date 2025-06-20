@@ -1,14 +1,32 @@
++++
+title = "Privacy Policy"
+url = "/privacy-policy"
+slug = "privacy-policy"
+layout = "page"
+summary = "Kebijakan privasi Skoolink menjelaskan bagaimana data pengguna diperlakukan, termasuk pengelolaan data saat menghubungi kami melalui formulir."
+image = "/img/logoskoolink.svg"
++++
+
+###### Kebijakan Privasi Skoolink
+
+Privasi Anda sangat penting bagi kami. **Skoolink** tidak mengumpulkan data pribadi Anda tanpa izin.
+
+Jika Anda menghubungi kami melalui formulir kontak, informasi yang Anda berikan hanya akan digunakan untuk keperluan komunikasi dan tindak lanjut. Kami tidak membagikan informasi tersebut kepada pihak ketiga.
+
 ---
-title: "Privacy Policy"
-url: "/privacy-policy" 
-slug: "privacy-policy"
-layout: "page"
+
+###### Penggunaan Data
+
+Kami hanya menyimpan data yang Anda berikan secara langsung, seperti nama dan email, dan hanya untuk kebutuhan komunikasi yang relevan. Kami tidak menggunakan pelacakan atau layanan periklanan pihak ketiga di situs ini.
+
 ---
 
-**skoolink Privacy Policy**
+###### Persetujuan Anda
 
-Your privacy is important to us. {{< site-title >}} does not collect any personal data without your permission. If you contact us via a form, your information is only used for communication purposes.
+Dengan menggunakan situs ini, Anda dianggap telah menyetujui kebijakan privasi ini.
 
-This website displays third-party advertisements, including Google AdSense, which may use cookies to serve relevant ads. You can disable cookies in your browser settings.
+Jika Anda memiliki pertanyaan mengenai kebijakan ini, silakan hubungi kami melalui halaman [Hubungi Kami](/contact).
 
-By using this site, you agree to this privacy policy.
+---
+
+**Terima kasih atas kepercayaan Anda kepada Skoolink.**
