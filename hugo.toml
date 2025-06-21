@@ -10,8 +10,9 @@ defaultImage = "/img/logo_skoolink.og.png"
 email = "hello@skoolink.id"
 phone = "+62 877-0101-1100"
 whatsApp = "6287701011100"
-address = "Jl. Cililitan Besar No.3 Jakarta Timur 13570 Indonesia"
-RandD = "Ruko Blok A No. 5 Perum Graha Indah, Lamongan Jawa Timur. 62281"
+address = """<p>Jl. Cililitan Besar No.3 </p>
+<p>Jakarta Timur 13570</p><p>Indonesia</p>"""
+RandD = """<p>Ruko Blok A No. 5 Perum Graha Indah,</p><p>Lamongan 62281</p><p>Jawa Timur.</p> """
  
   [[params.social]]
   name = "twitter"

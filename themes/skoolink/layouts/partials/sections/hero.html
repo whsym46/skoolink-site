@@ -51,9 +51,12 @@
                             <!-- CTA Button -->
                             <div class="mb-3 flex flex-wrap justify-center gap-6">
                                 {{ range $hero.Params.cta }}
-                                <a href="{{ .url }}" class="btn {{ if eq .style "primary" }}is-caribbean-green
-                                    is-transparent{{ else }}is-outline-midnight-moss{{ end }} btn-animation is-large
-                                    is-rounded group inline-block">
+                                {{ $btnURL := .button_url }}
+                                {{ if eq $btnURL "" }}
+                                {{ $btnURL = printf "https://wa.me/%s" site.Params.whatsapp }}
+                                {{ end }}
+                                <a href="{{ $btnURL }}" target="_blank" rel="noopener" class="btn {{ if eq .style "primary" }}is-caribbean-green is-transparent{{ else }}is-outline-midnight-moss{{ end
+                                    }} btn-animation is-large is-rounded group inline-block">
                                     <span>{{ .label }}</span>
                                 </a>
                                 {{ end }}

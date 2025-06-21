@@ -5,7 +5,7 @@ sub_summary = "Dengan proses aktivasi yang mudah dan tim support yang siap memba
 image_main = "/img/content-img-2.png"
 image_overlay = "/img/content-img-3.png"
 button_label = "Cobain Sekarang"
-button_url = "#"
+button_url = ""
 layout = "none"
 type = "section"
 +++

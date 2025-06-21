@@ -5,11 +5,16 @@
   <div class="breadcrumb-wrapper">
     <div class="container-default">
       <div class="breadcrumb-block">
-        <h1 class="breadcrumb-title">{{ title .Section }}</h1>
+        <h1 class="breadcrumb-title">
+          {{ if eq .Kind "term" }}{{ .Title }}{{ else }}{{ title .Section }}{{ end }}
+        </h1>
         <ul class="breadcrumb-nav">
           <li><a href="/">Home</a></li>
-          <li>{{ title .Section }}</li>
+          <li>
+            {{ if eq .Kind "term" }}{{ .Title }}{{ else }}{{ title .Section }}{{ end }}
+          </li>
         </ul>
+
       </div>
     </div>
     <div class="absolute left-0 top-0 -z-10">
@@ -28,10 +33,13 @@
     <div class="container-default">
       <div class="grid grid-cols-1 gap-x-6 gap-y-10 lg:grid-cols-[1fr,minmax(416px,_0.45fr)]">
         <div class="flex flex-col gap-y-10 lg:gap-y-14 xl:gap-y-20">
-          {{ if eq .Section "blog" }}
+          {{ if or (eq .Section "blog") (eq .Kind "term") }}
+
           <!-- Blog Post List -->
           <div class="grid gap-y-10">
-            {{ $paginator := .Paginate (where .Pages "Type" "blog" ) }}
+            {{ $pages := cond (eq .Kind "term") .Pages (where .Pages "Type" "blog") }}
+            {{ $paginator := .Paginate $pages }}
+
             {{ range $paginator.Pages }}
             <div class="jos">
               <div
@@ -50,7 +58,7 @@
                         <img src="{{ .Params.photo }}" alt="{{ .Title }}"
                           class="w-[45px] h-[45px] rounded-full object-cover" />
                         <span>By {{ .Title }}</span>
-                        {{ end }} 
+                        {{ end }}
                       </a>
                     </li>
                     <li>
@@ -132,7 +140,7 @@
                         <img src="{{ .Params.photo }}" alt="{{ .Title }}"
                           class="w-[45px] h-[45px] rounded-full object-cover" />
                         <span>By {{ .Title }}</span>
-                        {{ end }} 
+                        {{ end }}
                       </a>
                     </li>
                     <li>
@@ -193,6 +201,7 @@
               {{ end }}
             </ul>
           </nav>
+
           {{ end }}
         </div>
 

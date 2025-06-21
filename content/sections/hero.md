@@ -20,12 +20,12 @@ alt = "hero-avatar-img-3"
 
 [[cta]]
 label = "Coba Gratis"
-url = "#"
+button_url = ""
 style = "primary"
 
 [[cta]]
 label = "Jadwalkan Demo"
-url = "#"
+button_url = ""
 style = "secondary"
 
 [[stats]]

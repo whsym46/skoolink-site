@@ -21,8 +21,11 @@
             <p>{{ $about.Params.summary }}</p>
             <p>{{ $about.Params.sub_summary }}</p>
             <div class="mt-8 lg:mt-[50px]">
-              <a href="{{ $about.Params.button_url }}"
-                class="btn is-caribbean-green is-transparent btn-animation is-large is-rounded group inline-block">
+              {{ $btnURL := $about.Params.button_url }}
+              {{ if eq $btnURL "" }}
+              {{ $btnURL = printf "https://wa.me/%s" site.Params.whatsapp }}
+              {{ end }}
+              <a href="{{ $btnURL }}" target="_blank" rel="noopener"  class="btn is-caribbean-green is-transparent btn-animation is-large is-rounded group inline-block">
                 <span>
                   {{ $about.Params.button_label }}
                   <i class="fa-regular fa-arrow-right ml-[10px] text-2xl leading-none"></i>

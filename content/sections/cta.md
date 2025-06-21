@@ -10,12 +10,12 @@ description = "Skoolink adalah solusi digital lengkap untuk manajemen sekolah—
 
 [[params.buttons]]
 label = "Coba Gratis Sekarang"
-href = "/contact"
+href = ""
 style = "is-caribbean-green is-transparent"
 
 [[params.buttons]]
 label = "Lihat Fitur Lengkap"
-href = "/#section-feature"
+href = "/features"
 style = "is-outline-midnight-moss"
 
 note = "Gratis selamanya untuk versi dasar. Tidak perlu kartu kredit."

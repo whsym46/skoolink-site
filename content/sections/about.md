@@ -5,7 +5,7 @@ sub_summary = "Skoolink menyederhanakan manajemen sekolah dengan sistem digital 
 image_main = "/img/content-img-1.png"
 image_overlay = "/img/content-img-1-card.png"
 button_label = "Jadwalkan Demo"
-button_url = "#"
+button_url = ""
 layout = "none"
 type = "section"
 +++
