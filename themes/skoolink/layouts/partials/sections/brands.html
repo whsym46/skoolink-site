@@ -1,4 +1,5 @@
-
+{{ $section := site.GetPage "sections/brands.md" }}
+{{ if $section }}
 <!--...::: Brand Section Start :::... -->
 <div class="section-brand">
     <div class="jos">
@@ -8,30 +9,26 @@
             <div class="container-default">
                 <div
                     class="mx-auto mb-10 max-w-[80%] text-center text-xl font-semibold leading-[1.4] opacity-70 md:mb-16 lg:mb-20 lg:max-w-2xl">
-                    {{ .Params.heading }}
+                    {{ $section.Params.heading }}
                 </div>
 
                 <!-- Brand Slider -->
                 <div class="swiper brand-slider">
-                    <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         {{ range seq 1 2 }}
-                        {{ range $.Params.brands }}
+                        {{ range $section.Params.brands }}
                         <div class="swiper-slide">
                             <img src="/img/brands/{{ . }}" alt="{{ . | replaceRE " \\..*$" "" }}" width="186"
                                 height="46" class="h-auto w-fit mx-auto" />
                         </div>
                         {{ end }}
                         {{ end }}
-
                     </div>
-
                 </div>
                 <!-- Brand Slider -->
             </div>
-            <!-- Section Container -->
         </div>
-        <!-- Section Space -->
     </div>
 </div>
-<!--...::: Brand Section End :::... --> 
+<!--...::: Brand Section End :::... -->
+{{ end }}

@@ -3,7 +3,7 @@ title = "Pentingnya Komunikasi Efektif antara Sekolah dan Orang Tua"
 slug = "pentingnya-komunikasi-efektif-antara-sekolah-dan-orang-tua"
 date = 2025-06-19T15:00:00
 author = "Ricky Nicol"
-image = "/img/th-1/blog-main-3.jpg"
+image = "/img/blog/blog-main-3.jpg"
 summary = "Komunikasi dua arah antara sekolah dan orang tua adalah kunci keberhasilan pendidikan anak. Simak pentingnya membangun komunikasi yang efektif."
 categories = ["Pendidikan"]
 +++

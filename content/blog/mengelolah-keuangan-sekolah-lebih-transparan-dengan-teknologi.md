@@ -3,7 +3,7 @@ title = "Mengelola Keuangan Sekolah Lebih Transparan dengan Teknologi"
 slug = "mengelola-keuangan-sekolah-lebih-transparan-dengan-teknologi"
 date = 2025-06-18T10:00:00
 author = "Ricky Nicol"
-image = "/img/th-1/blog-main-4.jpg"
+image = "/img/blog/blog-main-4.jpg"
 summary = "Teknologi bantu sekolah mengelola dana pendidikan secara lebih transparan dan akuntabel. Simak solusi digitalnya."
 categories = ["Pendidikan"]
 +++

@@ -9,35 +9,7 @@
                 <!-- Section Wrapper -->
                 <div class="flex flex-col items-center justify-center">
                     <!-- Section Block -->
-                    <div class="max-w-[720px]">
-                        <h2
-                            class="text-center font-Kanit text-4xl font-medium leading-none -tracking-[1px] text-ColorMidnightMoss lg:text-5xl xl:text-7xl xxl:text-[80px]">
-                            Need a professional website? Try it now!
-                        </h2>
-                        <p class="mt-5 text-center text-[#2c2c2c]">
-                            Our website builder software offers pre-designed
-                            templates, we also provide various customization options
-                            like a blog site, business site, e-commerce, and more.
-                        </p>
-
-                        <div class="mt-8 text-center lg:mt-[50px]">
-                            <div class="mb-3 flex flex-wrap justify-center gap-6">
-                                <a href="#"
-                                    class="btn is-caribbean-green is-transparent btn-animation is-large is-rounded group inline-block">
-                                    <span>
-                                        Get started now
-                                        <i class="fa-regular fa-arrow-right ml-[10px] text-2xl leading-none"></i>
-                                    </span>
-                                </a>
-                                <a href="#"
-                                    class="btn is-outline-midnight-moss btn-animation is-large is-rounded group inline-block"><span>Watch
-                                        a demo</span></a>
-                            </div>
-                            <div>
-                                <span class="text-sm text-[#7F8995]">No credit card is required.</span>
-                            </div>
-                        </div>
-                    </div>
+                    {{ partial "sections/cta.html" . }}
                     <!-- Section Block -->
                 </div>
                 <!-- Section Wrapper -->
@@ -80,7 +52,7 @@
 
                             
                             <!-- Footer Mail -->
-                            <a href="mailto:yourdemo@email.com"
+                            <a href="mailto:{{ site.Params.email }}"
                                 class="my-6 block underline-offset-4 transition-all duration-300 hover:underline">{{
                                 site.Params.email }}</a>
                             <!-- Footer Social Link -->

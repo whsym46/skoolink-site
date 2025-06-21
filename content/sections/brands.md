@@ -1,6 +1,7 @@
 +++
 title = "Brand Slider"
-layout = "brands"
+layout = "none"
+type = "section"
 heading = "Telah dipercaya berbagai sekolah di Indonesia"
 brands = [
   "logo-mi-murni-sunan-drajat-lamongan.png",

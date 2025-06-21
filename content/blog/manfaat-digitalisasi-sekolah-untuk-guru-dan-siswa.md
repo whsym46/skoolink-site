@@ -3,7 +3,7 @@ title = "Manfaat Digitalisasi Sekolah untuk Guru dan Siswa"
 slug = "manfaat-digitalisasi-sekolah-untuk-guru-dan-siswa"
 date = 2025-06-19T09:00:00
 author = "Ricky Nicol"
-image = "/img/th-1/blog-main-1.jpg"
+image = "/img/blog/blog-main-1.jpg"
 summary = "Mengapa digitalisasi menjadi kebutuhan mendesak dalam dunia pendidikan modern? Temukan jawabannya di sini."
 categories = ["Pendidikan"]
 +++

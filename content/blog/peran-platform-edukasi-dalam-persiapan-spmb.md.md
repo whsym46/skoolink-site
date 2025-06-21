@@ -3,7 +3,7 @@ title = "Peran Platform Edukasi dalam Persiapan SPMB"
 slug = "peran-platform-edukasi-dalam-persiapan-spmb"
 date = 2025-06-17T08:00:00
 author = "Ricky Nicol"
-image = "/img/th-1/blog-main-5.jpg"
+image = "/img/blog/blog-main-5.jpg"
 summary = "SPMB jadi lebih mudah dan terstruktur dengan bantuan platform edukasi digital. Pelajari bagaimana teknologi mempermudah proses seleksi siswa baru."
 categories = ["Pendidikan"]
 +++

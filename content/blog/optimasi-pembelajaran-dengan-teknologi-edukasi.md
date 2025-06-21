@@ -3,7 +3,7 @@ title = "Optimasi Pembelajaran dengan Teknologi Edukasi (EdTech)"
 slug = "optimasi-pembelajaran-dengan-teknologi-edukasi"
 date = 2025-06-19T13:00:00
 author = "Ricky Nicol"
-image = "/img/th-1/blog-main-2.jpg"
+image = "/img/blog/blog-main-2.jpg"
 summary = "Bagaimana teknologi edukasi dapat mengubah pengalaman belajar menjadi lebih interaktif dan menyenangkan? Cari tahu di artikel ini."
 categories = ["Pendidikan"]
 +++

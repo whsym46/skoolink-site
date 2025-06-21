@@ -3,7 +3,7 @@ title = "Mengapa Sistem Presensi Digital Penting di Sekolah"
 slug = "mengapa-sistem-presensi-digital-sekolah-penting"
 date = 2025-06-10T09:00:00
 author = "Ricky Nicol"
-image = "/img/th-1/blog-main-2.jpg"
+image = "/img/blog/blog-main-2.jpg"
 summary = "Sistem presensi digital bukan hanya mencatat kehadiran, tapi juga membuka peluang komunikasi yang lebih responsif antara sekolah dan orang tua."
 categories = ["Pendidikan"]
 +++

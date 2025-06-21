@@ -6,12 +6,8 @@
 <!--...::: Hero Section End :::... -->
 
 
-<!--...::: Brand Section Start :::... -->
-{{ with site.GetPage "brands" }}
-{{ if .Params.brands }}
-{{ partial "sections/brands.html" . }}
-{{ end }}
-{{ end }}
+<!--...::: Brand Section Start :::... --> 
+{{ partial "sections/brands.html" . }} 
 <!--...::: Brand Section End :::... -->
 
 <!--...::: Content Section Start :::... -->
@@ -27,140 +23,7 @@
 <!--...::: Content Section End :::... -->
 
 <!--...::: FAQ Section Start :::... -->
-<section class="section-faq">
-    <!-- Section Space -->
-    <div class="section-space-bottom">
-        <!-- Section Container -->
-        <div class="container-default">
-            <!-- FAQ Area -->
-            <div
-                class="grid items-center gap-y-10 lg:grid-cols-[1fr_minmax(0,_0.8fr)] lg:gap-x-20 xl:gap-x-24 xxl:gap-x-32">
-                <!-- Content Block -->
-                <div class="jos" data-jos_animation="fade-right">
-                    <!-- Section Wrapper -->
-                    <div>
-                        <!-- Section Block -->
-                        <div class="mb-5">
-                            <h2
-                                class="font-Kanit text-4xl font-medium leading-none -tracking-[1px] lg:text-5xl xl:text-7xl xxl:text-[80px]">
-                                Solusi Digital untuk Tantangan Nyata Sekolah
-                            </h2>
-                        </div>
-                        <!-- Section Block -->
-                    </div>
-                    <!-- Section Wrapper -->
-                    <p>
-                        Di era digital, sekolah dituntut untuk bergerak cepat, transparan, dan terhubung dengan seluruh
-                        elemen—guru, siswa, hingga orang tua. Namun, masih banyak sekolah yang kewalahan dengan proses
-                        manual, data tercecer, dan komunikasi yang tidak efisien. Skoolink hadir sebagai solusi
-                        menyeluruh yang mengintegrasikan berbagai kebutuhan sekolah dalam satu platform.
-                    </p>
-                    <p>
-                        Dengan Skoolink, setiap aktivitas mulai dari absensi, pengelolaan nilai, pembayaran SPP, hingga
-                        komunikasi sekolah–orang tua bisa dilakukan dalam satu aplikasi praktis dan aman. Ini bukan
-                        hanya tentang teknologi—ini tentang membuat pendidikan lebih mudah, modern, dan bermakna.
-                    </p>
-                </div>
-                <!-- Content Block -->
-
-                <!-- FAQ Block -->
-                <div class="jos relative z-10 flex justify-center" data-jos_animation="fade-left">
-                    <!-- Accordion List -->
-                    <ul class="grid gap-6 rounded-[10px]">
-                        <!-- Accordion Item -->
-                        <li
-                            class="accordion-item active overflow-hidden rounded-[10px] border border-ColorMidnightMoss p-5">
-                            <!-- Accordion Header -->
-                            <div
-                                class="accordion-header relative pr-8 font-Kanit text-[28px] font-medium leading-[1.28] -tracking-[0.5px] text-ColorMidnightMoss">
-                                <button class="flex flex-1 gap-x-6 text-left">
-                                    <span class="inline-block h-10 w-auto">
-                                        <img src="/img/icons/icon-green-black-duotone-faq-1.svg"
-                                            alt="icon-green-black-duotone-faq-1" width="41" height="40" />
-                                    </span>
-                                    <span class="flex-1"> Hubungi tim sales Skoolink. </span>
-                                </button>
-                                <span class="accordion-icon-4 absolute right-0 top-0 text-xl">
-                                    <i class="fa-solid fa-chevron-down"></i>
-                                </span>
-                            </div>
-                            <!-- Accordion Header -->
-                            <!-- Accordion Body -->
-                            <div
-                                class="accordion-body ml-16 text-xl leading-[1.6] -tracking-[0.5px] text-ColorMidnightMoss">
-                                <p class="pt-5">
-                                    Tim sales kami akan mendemokan aplikasi Skoolink di sekolah Anda.
-                                </p>
-                            </div>
-                            <!-- Accordion Body -->
-                        </li>
-                        <!-- Accordion Item -->
-                        <!-- Accordion Item -->
-                        <li class="accordion-item overflow-hidden rounded-[10px] border border-ColorMidnightMoss p-5">
-                            <!-- Accordion Header -->
-                            <div
-                                class="accordion-header relative pr-8 font-Kanit text-[28px] font-medium leading-[1.28] -tracking-[0.5px] text-ColorMidnightMoss">
-                                <button class="flex flex-1 gap-x-6 text-left">
-                                    <span class="inline-block h-10 w-auto">
-                                        <img src="/img/icons/icon-green-black-duotone-faq-2.svg"
-                                            alt="icon-green-black-duotone-faq-2" width="45" height="40" />
-                                    </span>
-                                    <span class="flex-1"> Setup system Skoolink di sekolah Anda</span>
-                                </button>
-                                <span class="accordion-icon-4 absolute right-0 top-0 text-xl">
-                                    <i class="fa-solid fa-chevron-down"></i>
-                                </span>
-                            </div>
-                            <!-- Accordion Header -->
-                            <!-- Accordion Body -->
-                            <div
-                                class="accordion-body ml-16 text-xl leading-[1.6] -tracking-[0.5px] text-ColorMidnightMoss">
-                                <p class="pt-5">
-                                    Tim teknis Skoolink akan melakukan setup system dan upload aplikasi Skoolink untuk
-                                    sekolah Anda di Playstore dan Appstore.
-                                </p>
-                            </div>
-                            <!-- Accordion Body -->
-                        </li>
-                        <!-- Accordion Item -->
-                        <!-- Accordion Item -->
-                        <li class="accordion-item overflow-hidden rounded-[10px] border border-ColorMidnightMoss p-5">
-                            <!-- Accordion Header -->
-                            <div
-                                class="accordion-header relative pr-8 font-Kanit text-[28px] font-medium leading-[1.28] -tracking-[0.5px] text-ColorMidnightMoss">
-                                <button class="flex flex-1 gap-x-6 text-left">
-                                    <span class="inline-block h-10 w-auto">
-                                        <img src="/img/icons/icon-green-black-duotone-faq-3.svg"
-                                            alt="icon-green-black-duotone-faq-3" width="35" height="40" />
-                                    </span>
-                                    <span class="flex-1"> Mulai gunakan Skoolink di sekolah </span>
-                                </button>
-                                <span class="accordion-icon-4 absolute right-0 top-0 text-xl">
-                                    <i class="fa-solid fa-chevron-down"></i>
-                                </span>
-                            </div>
-                            <!-- Accordion Header -->
-                            <!-- Accordion Body -->
-                            <div
-                                class="accordion-body ml-16 text-xl leading-[1.6] -tracking-[0.5px] text-ColorMidnightMoss">
-                                <p class="pt-5">
-                                    Kini anda dapat mulai menggunakan Skoolink dan mendapatkan manfaat dan kemudahannya.
-                                </p>
-                            </div>
-                            <!-- Accordion Body -->
-                        </li>
-                        <!-- Accordion Item -->
-                    </ul>
-                    <!-- Accordion List -->
-                </div>
-                <!-- FAQ Block -->
-            </div>
-            <!-- FAQ Area -->
-        </div>
-        <!-- Section Container -->
-    </div>
-    <!-- Section Space -->
-</section>
+ {{ partial "sections/faq.html" . }}
 <!--...::: FAQ Section End :::... -->
 
 <!--...::: Pricing Section Start :::... -->
@@ -172,165 +35,16 @@
 {{ partial "sections/testimonials.html" . }}
 <!--...::: Testimonial Section End :::... -->
 
-<!--...::: Testimonial Section Start :::... -->
-
+<!--...::: Blog Section Start :::... --> 
 {{ partial "sections/blog.html" . }}
-<!--...::: Testimonial Section End :::... -->
-<!--...::: FAQ Section Start :::... -->
-<section class="section-faq">
-    <!-- Section Space -->
-    <div class="section-space">
-        <!-- Section Container -->
-        <div class="container-default">
-            <!-- Section Content Wrapper -->
-            <div class="jos mb-[60px] xl:mb-20">
-                <!-- Section Content Block -->
-                <div class="mx-auto max-w-[746px]">
-                    <div class="mb-5">
-                        <h2
-                            class="text-center font-Kanit text-4xl font-medium leading-none -tracking-[1px] text-ColorMidnightMoss lg:text-5xl xl:text-7xl xxl:text-[80px]">
-                            Pertanyaan yang sering ditanyakan
-                        </h2>
-                    </div>
-                </div>
-                <!-- Section Content Block -->
-            </div>
-            <!-- Section Content Wrapper -->
+<!--...::: Blog Section End :::... -->
 
-            <!-- Accordion List -->
-            <ul class="jos grid grid-cols-1 gap-6">
-                <!-- Accordion Item -->
-                <li
-                    class="accordion-item active overflow-hidden rounded-[10px] border border-ColorMidnightMoss p-[30px]">
-                    <!-- Accordion Header -->
-                    <div
-                        class="accordion-header flex justify-between gap-6 font-Kanit text-xl font-medium leading-[1.28] -tracking-[1px] text-ColorMidnightMoss lg:text-2xl xl:text-[28px]">
-                        <button class="flex-1 text-left">
-                            Apakah Skoolink bisa digunakan untuk semua jenjang sekolah?
-                        </button>
-                        <div
-                            class="accordion-icon-5 relative flex h-[50px] w-[50px] items-center justify-center rounded-[50%] border-2 border-ColorMidnightMoss text-2xl text-ColorMidnightMoss">
-                            <i class="fa-regular fa-plus"></i>
-                        </div>
-                    </div>
-                    <!-- Accordion Header -->
-                    <!-- Accordion Body -->
-                    <div class="accordion-body max-w-[1156px] text-xl text-[#2c2c2c] opacity-80">
-                        <p class="pt-4 lg:pt-2 xl:pt-1">
-                            Ya. Skoolink dirancang fleksibel dan dapat digunakan untuk jenjang SD, SMP, SMA, maupun SMK.
-                            Fitur-fiturnya dapat disesuaikan dengan kebutuhan dan struktur masing-masing sekolah.
-                        </p>
-                    </div>
-                    <!-- Accordion Body -->
-                </li>
-                <!-- Accordion Item -->
-                <!-- Accordion Item -->
-                <li class="accordion-item overflow-hidden rounded-[10px] border border-ColorMidnightMoss p-[30px]">
-                    <!-- Accordion Header -->
-                    <div
-                        class="accordion-header flex justify-between gap-6 font-Kanit text-xl font-medium leading-[1.28] -tracking-[1px] text-ColorMidnightMoss lg:text-2xl xl:text-[28px]">
-                        <button class="flex-1 text-left">
-                            Apakah penggunaan Skoolink membutuhkan perangkat khusus?
-                        </button>
-                        <div
-                            class="accordion-icon-5 relative flex h-[50px] w-[50px] items-center justify-center rounded-[50%] border-2 border-ColorMidnightMoss text-2xl text-ColorMidnightMoss">
-                            <i class="fa-regular fa-plus"></i>
-                        </div>
-                    </div>
-                    <!-- Accordion Header -->
-                    <!-- Accordion Body -->
-                    <div class="accordion-body max-w-[1156px] text-xl text-[#2c2c2c] opacity-80">
-                        <p class="pt-4 lg:pt-2 xl:pt-1">
-                            Tidak. Skoolink dapat diakses melalui smartphone (Android & iOS) dan juga tersedia dalam
-                            versi web untuk admin sekolah. Tidak perlu perangkat khusus—cukup koneksi internet dan akun
-                            yang telah terdaftar.
-                        </p>
-                    </div>
-                    <!-- Accordion Body -->
-                </li>
-                <!-- Accordion Item -->
-                <!-- Accordion Item -->
-                <li class="accordion-item overflow-hidden rounded-[10px] border border-ColorMidnightMoss p-[30px]">
-                    <!-- Accordion Header -->
-                    <div
-                        class="accordion-header flex justify-between gap-6 font-Kanit text-xl font-medium leading-[1.28] -tracking-[1px] text-ColorMidnightMoss lg:text-2xl xl:text-[28px]">
-                        <button class="flex-1 text-left">
-                            Apakah data sekolah dan siswa aman di Skoolink?
-                        </button>
-                        <div
-                            class="accordion-icon-5 relative flex h-[50px] w-[50px] items-center justify-center rounded-[50%] border-2 border-ColorMidnightMoss text-2xl text-ColorMidnightMoss">
-                            <i class="fa-regular fa-plus"></i>
-                        </div>
-                    </div>
-                    <!-- Accordion Header -->
-                    <!-- Accordion Body -->
-                    <div class="accordion-body max-w-[1156px] text-xl text-[#2c2c2c] opacity-80">
-                        <p class="pt-4 lg:pt-2 xl:pt-1">
-                            Keamanan data adalah prioritas kami. Semua data disimpan di server yang terenkripsi dan
-                            dilindungi dengan sistem keamanan berstandar tinggi. Hanya pihak berwenang di sekolah yang
-                            dapat mengakses informasi sensitif.
-                        </p>
-                    </div>
-                    <!-- Accordion Body -->
-                </li>
-                <!-- Accordion Item -->
-                <!-- Accordion Item -->
-                <li class="accordion-item overflow-hidden rounded-[10px] border border-ColorMidnightMoss p-[30px]">
-                    <!-- Accordion Header -->
-                    <div
-                        class="accordion-header flex justify-between gap-6 font-Kanit text-xl font-medium leading-[1.28] -tracking-[1px] text-ColorMidnightMoss lg:text-2xl xl:text-[28px]">
-                        <button class="flex-1 text-left">
-                            Apakah Skoolink bisa membantu proses SPMB (Sistem Penerimaan Murid Baru)?
-                        </button>
-                        <div
-                            class="accordion-icon-5 relative flex h-[50px] w-[50px] items-center justify-center rounded-[50%] border-2 border-ColorMidnightMoss text-2xl text-ColorMidnightMoss">
-                            <i class="fa-regular fa-plus"></i>
-                        </div>
-                    </div>
-                    <!-- Accordion Header -->
-                    <!-- Accordion Body -->
-                    <div class="accordion-body max-w-[1156px] text-xl text-[#2c2c2c] opacity-80">
-                        <p class="pt-4 lg:pt-2 xl:pt-1">
-                            Tentu. Skoolink memiliki fitur SPMB online yang memudahkan calon siswa untuk mendaftar,
-                            unggah dokumen, dan menerima notifikasi tanpa perlu datang langsung ke sekolah.
-                        </p>
-                    </div>
-                    <!-- Accordion Body -->
-                </li>
-                <!-- Accordion Item -->
-                <!-- Accordion Item -->
-                <li class="accordion-item overflow-hidden rounded-[10px] border border-ColorMidnightMoss p-[30px]">
-                    <!-- Accordion Header -->
-                    <div
-                        class="accordion-header flex justify-between gap-6 font-Kanit text-xl font-medium leading-[1.28] -tracking-[1px] text-ColorMidnightMoss lg:text-2xl xl:text-[28px]">
-                        <button class="flex-1 text-left">
-                            Bagaimana jika sekolah butuh bantuan teknis saat menggunakan Skoolink?
-                        </button>
-                        <div
-                            class="accordion-icon-5 relative flex h-[50px] w-[50px] items-center justify-center rounded-[50%] border-2 border-ColorMidnightMoss text-2xl text-ColorMidnightMoss">
-                            <i class="fa-regular fa-plus"></i>
-                        </div>
-                    </div>
-                    <!-- Accordion Header -->
-                    <!-- Accordion Body -->
-                    <div class="accordion-body max-w-[1156px] text-xl text-[#2c2c2c] opacity-80">
-                        <p class="pt-4 lg:pt-2 xl:pt-1">
-                            Kami menyediakan layanan dukungan teknis yang responsif melalui WhatsApp, email, dan chat
-                            langsung. Tim support kami siap membantu Anda mulai dari onboarding, pelatihan, hingga
-                            pendampingan harian.
-                        </p>
-                    </div>
-                    <!-- Accordion Body -->
-                </li>
-                <!-- Accordion Item -->
-            </ul>
-            <!-- Accordion List -->
-        </div>
-        <!-- Section Container -->
-    </div>
-    <!-- Section Space -->
-</section>
+<!--...::: FAQ Section Start :::... --> 
+{{ partial "sections/faq-umum.html" . }}
 <!--...::: FAQ Section End :::... -->
+<!--...::: Contact Section Start :::... -->
+{{ partial "sections/contact.html" . }}
+<!--...::: Contact Section End :::... -->
 
 
 
