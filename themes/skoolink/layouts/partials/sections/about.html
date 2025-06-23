@@ -37,10 +37,12 @@
           <!-- Content Block Right -->
           <div class="jos order-2 md:order-1" data-jos_animation="fade-left">
             <div class="relative">
+              <div class="bg-cover overflow-hidden">
               <img src="{{ $about.Params.image_main }}" alt="content-main" width="586" height="586"
-                class="h-full w-full" />
+                class="h-full w-full object-cover" />
+              <div class="bg-cover overflow-hidden h-[243px] w-[353px]"></div>
               <img src="{{ $about.Params.image_overlay }}" alt="content-overlay" width="353" height="243"
-                class="absolute -right-[110px] bottom-12 hidden lg:inline-block" />
+                class="absolute -right-[110px] bottom-12 hidden lg:inline-block" /></div>
             </div>
           </div>
 

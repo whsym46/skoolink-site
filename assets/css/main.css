@@ -1244,6 +1244,10 @@ p:last-child {
   height: 1px;
 }
 
+.h-\[243px\] {
+  height: 243px;
+}
+
 .h-\[30px\] {
   height: 30px;
 }
@@ -1351,6 +1355,10 @@ p:last-child {
 
 .w-\[320px\] {
   width: 320px;
+}
+
+.w-\[353px\] {
+  width: 353px;
 }
 
 .w-\[35px\] {
@@ -2145,11 +2153,6 @@ p:last-child {
 .px-\[30px\] {
   padding-left: 30px;
   padding-right: 30px;
-}
-
-.py-0 {
-  padding-top: 0px;
-  padding-bottom: 0px;
 }
 
 .py-1 {
@@ -3946,11 +3949,6 @@ p:last-child {
     padding-bottom: 5rem;
   }
 
-  .md\:py-4 {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-
   .md\:pt-36 {
     padding-top: 9rem;
   }
@@ -3977,10 +3975,6 @@ p:last-child {
 }
 
 @media (min-width: 992px) {
-  .lg\:col-span-12 {
-    grid-column: span 12 / span 12;
-  }
-
   .lg\:col-span-2 {
     grid-column: span 2 / span 2;
   }

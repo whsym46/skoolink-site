@@ -18,8 +18,7 @@
                         {{ range seq 1 2 }}
                         {{ range $section.Params.brands }}
                         <div class="swiper-slide">
-                            <img src="/img/brands/{{ . }}" alt="{{ . | replaceRE " \\..*$" "" }}" width="186"
-                                height="46" class="h-auto w-fit mx-auto" />
+                            <img src="/img/brands/{{ . }}" alt="{{ . | replaceRE " \\..*$" "" }}" class="h-auto ma-x-[46px] w-auto mx-auto" />
                         </div>
                         {{ end }}
                         {{ end }}
