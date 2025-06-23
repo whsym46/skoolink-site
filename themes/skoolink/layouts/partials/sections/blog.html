@@ -16,9 +16,9 @@
             {{ range $recentBlogs }}
             <div
                 class="jos group overflow-hidden rounded-[10px] border border-[#E1E1E] bg-white hover:border-white hover:shadow-[0_4px_60px_rgba(10,16,47,0.08)]">
-                <a href="{{ .RelPermalink }}" class="block overflow-hidden">
-                    <img src="{{ .Params.image }}" alt="{{ .Title }}" width="856" height="450"
-                        class="h-auto w-full scale-100 object-cover transition-all duration-300 group-hover:scale-105" />
+                <a href="{{ .RelPermalink }}" class="block overflow-hidden max-h-[320px]">
+                    <img src="{{ .Params.image }}" alt="{{ .Title }}" 
+                        class="w-[856px] h-[320px] scale-100  object-cover transition-all duration-300 group-hover:scale-105" />
                 </a>
                 <div class="p-[30px]">
                     <ul class="flex flex-wrap items-center gap-4 text-base font-semibold sm:gap-6">

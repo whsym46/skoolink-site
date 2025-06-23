@@ -5,7 +5,7 @@
     <input type="search" name="sidebar-search" id="sidebar-search" placeholder="Type to search..."
       class="focus:border-colortext-ColorBlue h-full w-full rounded-[50px] border border-[#E1E1E1] bg-white py-[15px] pl-16 pr-8 text-lg text-ColorBlack outline-none transition-all placeholder:text-ColorBlack"
       required />
-    <button type="submit" class="absolute left-[30px] top-0 h-full hover:text-ColorBlue">
+    <button type="submit" class="absolute  left-[30px] top-0 h-full hover:text-ColorBlue">
       <i class="fa-solid fa-magnifying-glass"></i>
     </button>
   </form>
@@ -50,8 +50,8 @@
   <ul class="flex flex-col gap-y-6">
     {{ range $items }}
     <li class="group flex flex-col items-center gap-x-4 gap-y-4 sm:flex-row">
-      <a href="{{ .RelPermalink }}" class="inline-block h-[100px] w-full overflow-hidden rounded-[5px] sm:w-[150px]">
-        <img src="{{ .Params.image }}" alt="{{ .Title }}" width="150" height="100"
+      <a href="{{ .RelPermalink }}" class="inline-block h-[100px] w-[150px] overflow-hidden rounded-[5px] sm:w-[150px]">
+        <img src="{{ .Params.image }}" alt="{{ .Title }}" 
           class="h-full w-full scale-100 object-cover transition-all duration-300 group-hover:scale-105" />
       </a>
       <div class="flex w-full flex-col gap-y-3 sm:w-auto sm:flex-1">
