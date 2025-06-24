@@ -76,7 +76,7 @@
 
                       <img src="{{ .Params.photo }}" alt="{{ .Title }}"
                         class="w-[45px] h-[45px] rounded-full object-cover" />
-                      <span>By {{ .Title }}</span>
+                      <span>Oleh {{ .Title }}</span>
                       {{ end }}
                     </a>
                   </li>
@@ -113,7 +113,7 @@
               <!-- Blog Details Wrapper -->
             </article>
             <!-- Blog Post Article -->
-{{ if .Site.IsServer }}
+            {{ if .Site.IsServer }}
             {{ $current := .RelPermalink }}
             {{ if not (or
             (hasPrefix $current "/contact")
