@@ -175,59 +175,6 @@
 <script src="/js/vendors/swiper-bundle.min.js"></script>
 <script src="/js/vendors/fslightbox.js"></script>
 <script src="/js/vendors/jos.min.js"></script>
-<script src="/js/vendors/menu.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-
- 
+<script src="/js/vendors/menu.js"></script> 
 <script src="/js/main.js" defer></script> 
-  
-    <script>
-    document.addEventListener("DOMContentLoaded", () => {
-        const fallback = "/img/default.webp"; // Ganti ke default.png jika kamu pakai .png
-
-        document.querySelectorAll("img").forEach(img => {
-            const rawSrc = img.getAttribute("src") || "";
-            const cleanedSrc = rawSrc.trim();
-
-            const isReallyBadSrc =
-                cleanedSrc === "" ||
-                cleanedSrc === "%20" ||
-                /^(\s*|\/?%20)$/.test(rawSrc);
-
-            // Kasus src kosong atau tidak valid
-            if (isReallyBadSrc) {
-                console.warn(`🔍 src kosong/tidak valid (${rawSrc}), set default`);
-                img.src = fallback;
-                img.classList.add("fallback-applied");
-            }
-
-            // Gagal dimuat sebelum event error sempat dipasang
-            if (img.complete && img.naturalWidth === 0) {
-                console.warn(`⚠️ Gambar gagal dimuat sejak awal: ${img.src}, ganti default`);
-                if (!img.classList.contains("fallback-applied")) {
-                    img.src = fallback;
-                    img.classList.add("fallback-applied");
-                }
-            }
-
-            // Gagal dimuat setelah render
-            img.onerror = () => {
-                if (img.src !== fallback && !img.classList.contains("fallback-applied")) {
-                    console.warn(`❌ Gagal muat gambar: ${img.src}, ganti default`);
-                    img.src = fallback;
-                    img.classList.add("fallback-applied");
-                }
-            };
-        });
-    });
-</script> 
+<script src="/js/custom.js" defer></script>

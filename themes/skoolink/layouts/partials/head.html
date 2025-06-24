@@ -17,7 +17,7 @@
 
 <!-- Open Graph Meta -->
 <meta property="og:title" content="{{ if .IsHome }}{{ site.Title }} - Aplikasi Sekolah Terintegrasi{{ else }}{{ .Title }} - {{ site.Title }}{{ end }}">
-<meta property="og:description" content="{{ .Params.summary }}">
+<meta name="description" content="{{ with .Params.summary }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
 <meta property="og:image" content="{{ with .Params.image }}{{ . | absURL }}{{ else }}{{ "images/logo_skoolink.og.png" | absURL }}{{ end }}">
 <meta property="og:type" content="article">
 <meta property="og:url" content="{{ .Permalink }}">
@@ -41,8 +41,8 @@
 
 <!-- 🔸 Favicon -->
 <link rel="icon" href="/img/favicon.png" type="image/png" />
-<link rel="apple-touch-icon" href="/img/icons/logo_skoolink_square_100.webp">
-<link rel="shortcut icon" href="/img/icons/logo_skoolink_square_100.webp">
+<link rel="apple-touch-icon" href="/img/icons/logo_skoolink_square_100.png">
+<link rel="shortcut icon" href="/img/icons/logo_skoolink_square_100.png">
 
 <!-- 🔸 Font Lokal (Inter, Kanit, Rubik) -->
 <link rel="stylesheet" href="/fonts/webfonts/inter/stylesheet.css" />
