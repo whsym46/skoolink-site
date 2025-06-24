@@ -1,5 +1,6 @@
 <!-- Single Sidebar -->
 <div class="rounded-[10px] bg-ColorOffWhite p-5">
+  {{ if .Site.IsServer }}
   <!-- Sidebar Search -->
   <form action="#" method="post" class="relative h-[60px]">
     <input type="search" name="sidebar-search" id="sidebar-search" placeholder="Type to search..."
@@ -10,6 +11,7 @@
     </button>
   </form>
   <!-- Sidebar Search -->
+  {{ end }}
 </div>
 <!-- Single Sidebar -->
 <!-- Single Sidebar -->

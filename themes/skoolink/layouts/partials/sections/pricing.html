@@ -1,7 +1,9 @@
 {{ $pricing := site.GetPage "section" "pricing" }}
 
 {{ if not $pricing }}
+ {{ if .Site.IsServer }}
 <p class="text-red-600 font-bold">⚠️ Tidak bisa mendapatkan halaman pricing!</p>
+{{ end }}
 {{ else }}
 
 <section class="section-pricing" id="section-pricing">
