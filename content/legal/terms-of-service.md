@@ -2,7 +2,7 @@
 title: "Ketentuan Layanan"
 url: "/terms-of-service"
 slug: "terms-of-service"
-layout: "page"
+layout: "redirect"
 summary: "Ketentuan penggunaan situs Skoolink yang menjelaskan batasan, larangan, dan hak penyedia layanan terhadap konten dan pengguna situs."
 image: "/img/logoskoolink.svg"
 ---

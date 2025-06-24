@@ -2,7 +2,7 @@
 title = "Tentang Kami"
 url = "/about-us"
 slug = "about-us"
-layout = "page"
+layout = "redirect"
 summary = "Skoolink adalah aplikasi digitalisasi sekolah yang memudahkan pengelolaan akademik, keuangan, presensi, dan komunikasi dalam satu platform."
 image = "/img/logoskoolink.svg"
 footerText = "Kami adalah mitra digital bagi sekolah-sekolah Indonesia. Bersama Skoolink, kita wujudkan pendidikan yang modern, transparan, dan inklusif."

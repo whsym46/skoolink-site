@@ -51,8 +51,8 @@
                 (hasPrefix $current "/about-us")
                 (hasPrefix $current "/disclaimer")
                 ) }}
-                <a href="{{ .RelPermalink }}" class="block overflow-hidden w-[856px] h-[450px]">
-                  <img src="{{ .Params.image }}" alt="{{ .Title }}" 
+                <a href="{{ .RelPermalink }}" class="block overflow-hidden w-full lg:w-[856px] h-auto lg:h-[450px]">
+                  <img src="{{ .Params.image }}" alt="{{ .Title }}" width="856" height="450"
                     class="h-auto w-full scale-100 object-cover transition-all duration-300 group-hover:scale-105" />
                 </a>{{ end }}
               </div>
@@ -113,7 +113,7 @@
               <!-- Blog Details Wrapper -->
             </article>
             <!-- Blog Post Article -->
-
+{{ if .Site.IsServer }}
             {{ $current := .RelPermalink }}
             {{ if not (or
             (hasPrefix $current "/contact")
@@ -328,6 +328,7 @@
                 </form>
               </div>
             </div>
+            {{ end }}
             {{ end }}
             <!-- Blog Comment Form -->
           </div>

@@ -2,7 +2,7 @@
 title = "Privacy Policy"
 url = "/privacy-policy"
 slug = "privacy-policy"
-layout = "page"
+layout = "redirect"
 summary = "Kebijakan privasi Skoolink menjelaskan bagaimana data pengguna diperlakukan, termasuk pengelolaan data saat menghubungi kami melalui formulir."
 image = "/img/logoskoolink.svg"
 +++

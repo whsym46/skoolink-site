@@ -16,7 +16,7 @@
             {{ if eq $btnURL "" }}
             {{ $btnURL = printf "https://wa.me/%s" site.Params.whatsapp }}
             {{ end }}
-            <a href="{{ $btnURL }}" class="btn {{ .style }} btn-animation is-large is-rounded group inline-block">
+            <a href="{{ $btnURL }}" target="_blank" rel="noopener" class="btn {{ .style }} btn-animation is-large is-rounded group inline-block">
                 <span>{{ .label }}<i class="fa-regular fa-arrow-right ml-[10px] text-2xl leading-none"></i></span>
             </a>
             {{ end }}

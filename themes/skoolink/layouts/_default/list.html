@@ -44,8 +44,8 @@
             <div class="jos">
               <div
                 class="group overflow-hidden rounded-[10px] border border-[#E1E1E] bg-white hover:border-white hover:shadow-[0_4px_60px_rgba(10,16,47,0.08)]">
-                <a href="{{ .RelPermalink }}" class="block rounded-[10px] overflow-hidden w-[856px] h-[450px]">
-                  <img src="{{ .Params.image }}" alt="{{ .Title }}" 
+                <a href="{{ .RelPermalink }}" class="block rounded-[10px] overflow-hidden w-full lg:w-[856px]">
+                  <img src="{{ .Params.image }}" alt="{{ .Title }}" width="856" height="450"
                     class="w-full h-full scale-100 object-cover transition-all duration-300 group-hover:scale-105" />
                 </a>
                 <div class="p-[30px]">
@@ -82,8 +82,7 @@
                   </h2>
                   <p class="mb-7 line-clamp-2 last:mb-0">{{ .Summary }}</p>
                   <a href="{{ .RelPermalink }}"
-                    class="inline-flex items-center gap-x-2 text-base font-bold text-ColorBlack group-hover:text-ColorBlue">Read
-                    More
+                    class="inline-flex items-center gap-x-2 text-base font-bold text-ColorBlack group-hover:text-ColorBlue">Baca selengkapnya.
                     <span class="transition-all duration-300 ease-in-out group-hover:translate-x-2">
                       <i class="fa-solid fa-arrow-right"></i>
                     </span>

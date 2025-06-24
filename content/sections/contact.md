@@ -1,18 +1,18 @@
 +++
 title = "Contact Us"
 url = "/contact"
-layout = "none"
+layout = "redirect"
 type = "section"
 
 [[features]]
 icon = "/img/icons/address.png"
-title = "Head Office"
+title = "Kantor Pusat"
 summary = ""
 delay = "0"
 
 [[features]]
 icon = "/img/icons/rnd.png"
-title = "R&D"
+title = "Kantor Tim Pengembang"
 summary = ""
 
 [[features]]

@@ -16,9 +16,9 @@
             {{ site.Params.phone }}
           </a>
 
-        {{ else if eq .title "Head Office" }}
+        {{ else if eq .title "Kantor Pusat" }}
           {{ site.Params.address | safeHTML }}
-{{ else if eq .title "R&D" }}
+{{ else if eq .title "Kantor Tim Pengembang" }}
           {{ site.Params.RandD | safeHTML }}
 
         {{ else }}

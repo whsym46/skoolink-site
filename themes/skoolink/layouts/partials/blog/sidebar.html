@@ -16,7 +16,7 @@
 <div class="rounded-[10px] bg-ColorOffWhite p-8">
   <div
     class="relative mb-[30px] inline-block pb-[10px] text-lg font-semibold text-ColorBlack after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:bg-black">
-  Categories
+  Kategori
   </div>
   <!-- Blog Categories List -->
   <ul class="text-ColorBlack">
@@ -36,7 +36,7 @@
 <div class="rounded-[10px] bg-ColorOffWhite p-8">
   <div
     class="relative mb-[30px] inline-block pb-[10px] text-lg font-semibold text-ColorBlack after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:bg-black">
-    {{ if eq .Section "features" }}Recent Features{{ else }}Recent Posts{{ end }}
+    {{ if eq .Section "features" }}Fitur Terbaru{{ else }}Artikel Terbaru{{ end }}
   </div>
 
   <!-- Blog Recent Post List -->
@@ -50,8 +50,8 @@
   <ul class="flex flex-col gap-y-6">
     {{ range $items }}
     <li class="group flex flex-col items-center gap-x-4 gap-y-4 sm:flex-row">
-      <a href="{{ .RelPermalink }}" class="inline-block h-[100px] w-[150px] overflow-hidden rounded-[5px] sm:w-[150px]">
-        <img src="{{ .Params.image }}" alt="{{ .Title }}" 
+      <a href="{{ .RelPermalink }}" class="inline-block h-auto w-full md:w-[150px] overflow-hidden rounded-[5px] sm:w-[150px]">
+        <img src="{{ .Params.image }}" alt="{{ .Title }}" width="150" height="100"
           class="h-full w-full scale-100 object-cover transition-all duration-300 group-hover:scale-105" />
       </a>
       <div class="flex w-full flex-col gap-y-3 sm:w-auto sm:flex-1">
@@ -73,7 +73,7 @@
 <div class="rounded-[10px] bg-ColorOffWhite p-8">
   <div
     class="relative mb-[30px] inline-block pb-[10px] text-lg font-semibold text-ColorBlack after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:bg-black">
-    Tags
+    Tag
   </div>
 
   <!-- Blog Tags Post List -->
@@ -82,7 +82,7 @@
   <li>
     <a href="{{ "tags/" | relLangURL }}{{ $name | urlize }}"
       class="inline-block rounded-[55px] bg-ColorBlack bg-opacity-5 px-5 py-1 hover:bg-ColorBlue hover:text-white">
-      {{ $name }}
+      #{{ $name }}
     </a>
   </li>
   {{ end }}
@@ -92,6 +92,7 @@
 </div>
 <!-- Single Sidebar -->
 <!-- Single Sidebar -->
+{{ if .Site.IsServer }}
 <div class="rounded-[10px] bg-ColorOffWhite p-8">
   <div
     class="relative mb-[30px] inline-block pb-[10px] text-lg font-semibold text-ColorBlack after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:bg-black">
@@ -113,3 +114,4 @@
   </form>
 </div>
 <!-- Single Sidebar -->
+{{ end }}

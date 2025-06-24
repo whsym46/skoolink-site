@@ -44,32 +44,32 @@ RandD = """<p>Ruko Blok A No. 5 Perum Graha Indah,</p><p>Lamongan 62281</p><p>Ja
 
   [[menu.main]]
   name = "Tentang"
-  url = "#section-about"
+  url = "/#section-about"
   weight = 2
 
   [[menu.main]]
   name = "Fitur"
-  url = "#section-feature"
+  url = "/#section-feature"
   weight = 3
 
   [[menu.main]]
   name = "Harga"
-  url = "#section-pricing"
+  url = "/#section-pricing"
   weight = 4
 
   [[menu.main]]
   name = "Testimonial"
-  url = "#section-testimonial"
+  url = "/#section-testimonial"
   weight = 5
 
   [[menu.main]]
   name = "Blog"
-  url = "#section-blog"
+  url = "/#section-blog"
   weight = 6
 
   [[menu.main]]
   name = "Kontak"
-  url = "#section-kontak"
+  url = "/#section-contact"
   weight = 7
 
   [[menu.primary]]
@@ -79,22 +79,22 @@ RandD = """<p>Ruko Blok A No. 5 Perum Graha Indah,</p><p>Lamongan 62281</p><p>Ja
 
   [[menu.primary]]
   name = "Tentang"
-  url = "#section-about"
+  url = "/#section-about"
   weight = 2
 
   [[menu.primary]]
   name = "Fitur"
-  url = "#section-feature"
+  url = "/#section-feature"
   weight = 3
 
   [[menu.primary]]
-  name = "Pricing"
-  url = "#section-pricing"
+  name = "Harga"
+  url = "/#section-pricing"
   weight = 4
 
   [[menu.primary]]
-  name = "Contact"
-  url = "/contact"
+  name = "Kontak"
+  url = "/#section-contact"
   weight = 5
 
   [[menu.utility]]

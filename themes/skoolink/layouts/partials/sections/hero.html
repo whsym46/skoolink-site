@@ -16,7 +16,7 @@
                                 class="mb-6 text-4xl font-extrabold leading-[1.11] -tracking-[1px] md:text-5xl lg:text-6xl xl:text-7xl xxl:text-[90px]">
                                 {{ $hero.Title }}</h1>
                             <p class="mb-10 xl:mb-[50px]">{{ $hero.Params.summary }}</p>
-
+                            {{ if .Site.IsServer }}
                             <!-- Avatars & Stats -->
                             <div class="mb-8 flex flex-wrap items-center gap-[10px] lg:mb-[50px]">
                                 <!-- Hero Avatar Block-->
@@ -47,7 +47,7 @@
                                     {{ end }}
                                 </ul>
                             </div>
-
+                            {{ end }}
                             <!-- CTA Button -->
                             <div class="mb-3 flex flex-wrap justify-center gap-6">
                                 {{ range $hero.Params.cta }}
@@ -75,9 +75,11 @@
                             <img src="{{ $hero.Params.main_image }}" alt="hero" width="612" height="1272"
                                 class="z-10 mx-auto h-[635px] w-[306px]" />
                             <img src="/img/elements/hero-3-shapes-1.svg" alt="shape-1"
-                                class="absolute -left-[12%] bottom-[18%] -z-10" />
-                            <img src="/img/elements/hero-3-shapes-2.svg" alt="shape-2"
-                                class="absolute -right-[18%] top-[15%] -z-10" />
+                                class="absolute -left-[12%] top-[15%] -z-10" /> 
+                            <img src="/img/elements/maskot.png" alt="maskot-skoolink"
+                                class="absolute -left-[20%] sm:-left-[10%] lg:-bottom-[15%] -bottom-[10%] lg:-left-[40%] lg:bottom-[0%] h-60 -rotate-[0deg] w-auto z-20" />
+                            <img src="/img/elements/hero-3-shapes-1.svg" alt="shape-2"
+                                class="absolute -right-[10%] bottom-[18%] -z-10" />
                         </div>
                     </div>
 

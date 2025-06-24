@@ -2,10 +2,11 @@
 title = "Pentingnya Komunikasi Efektif antara Sekolah dan Orang Tua"
 slug = "pentingnya-komunikasi-efektif-antara-sekolah-dan-orang-tua"
 date = 2025-06-19T15:00:00
-author = "Ricky Nicol"
+author = "Skoolink"
 image = "/img/blog/blog-main-3.jpg"
 summary = "Komunikasi dua arah antara sekolah dan orang tua adalah kunci keberhasilan pendidikan anak. Simak pentingnya membangun komunikasi yang efektif."
 categories = ["Pendidikan"]
+tags = ["komunikasi sekolah", "orang tua", "hubungan orang tua dan guru", "Skoolink", "kolaborasi pendidikan"]
 +++
 
 Keberhasilan pendidikan seorang anak tidak hanya bergantung pada guru atau kurikulum, melainkan juga kolaborasi yang erat antara sekolah dan orang tua. Komunikasi yang terbuka, rutin, dan efektif memungkinkan kedua belah pihak saling memahami kebutuhan dan kondisi anak.

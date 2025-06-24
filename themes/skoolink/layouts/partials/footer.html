@@ -55,17 +55,7 @@
                             <a href="mailto:{{ site.Params.email }}"
                                 class="my-6 block underline-offset-4 transition-all duration-300 hover:underline">{{
                                 site.Params.email }}</a>
-                            <!-- Footer Social Link -->
-                            <div class="flex flex-wrap gap-5">
-                                {{ range site.Params.social }}
-                                <a href="{{ .url }}" target="_blank" rel="noopener noreferrer"
-                                    class="flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-white bg-opacity-5 text-sm text-white transition-all duration-300 hover:bg-ColorPaleGold hover:text-ColorDenimDarkBlue"
-                                    aria-label="{{ .name }}">
-                                    <i class="fa-brands {{ .icon }}"></i>
-                                </a>
-                                {{ end }}
-
-                            </div>
+                            
                         </div>
                         <!-- Footer Content -->
                     </div>
@@ -75,7 +65,7 @@
                     <div class="flex flex-col gap-y-7">
                         <!-- Footer Widget Title -->
                         <div class="text-xl font-semibold capitalize text-ColorMidnightMoss">
-                            Primary Pages
+                            Halaman Utama
                         </div>
                         <!-- Footer Navbar -->
                         <ul class="flex flex-col gap-y-[10px] capitalize">
@@ -89,7 +79,7 @@
                         </ul>
                     </div>
                     <!-- Footer Widget Item -->
-
+                   {{ if .Site.IsServer }}
                     <!-- Footer Widget Item -->
                     <div class="flex flex-col gap-y-6">
                         <!-- Footer Title -->
@@ -133,7 +123,7 @@
                         </form>
                         <!-- Footer Newsletter Form -->
                     </div>
-                    <!-- Footer Widget Item -->
+                    <!-- Footer Widget Item -->{{ end }}
                 </div>
                 <!-- Footer Widget List -->
             </div>
@@ -151,26 +141,13 @@
             <div class="container-default">
                 <div class="flex flex-col items-center gap-5 lg:flex-row lg:items-start lg:justify-between">
                     <div class="flex flex-wrap gap-5">
-                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
-                            class="flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-ColorMidnightMoss/10 text-sm text-ColorMidnightMoss transition-all duration-300 hover:bg-ColorCaribbeanGreen"
-                            aria-label="twitter">
-                            <i class="fa-brands fa-x-twitter"></i>
-                        </a>
-                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
-                            class="flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-ColorMidnightMoss/10 text-sm text-ColorMidnightMoss transition-all duration-300 hover:bg-ColorCaribbeanGreen"
-                            aria-label="facebook">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </a>
-                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
-                            class="flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-ColorMidnightMoss/10 text-sm text-ColorMidnightMoss transition-all duration-300 hover:bg-ColorCaribbeanGreen"
-                            aria-label="instagram">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                        <a href="https://www.github.com/" target="_blank" rel="noopener noreferrer"
-                            class="flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-ColorMidnightMoss/10 text-sm text-ColorMidnightMoss transition-all duration-300 hover:bg-ColorCaribbeanGreen"
-                            aria-label="github">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
+                        {{ range site.Params.social }}
+                                <a href="{{ .url }}" target="_blank" rel="noopener noreferrer"
+                                    class="flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-ColorMidnightMoss/10 text-sm text-ColorMidnightMoss transition-all duration-300 hover:bg-ColorCaribbeanGreen"
+                                    aria-label="{{ .name }}">
+                                    <i class="fa-brands {{ .icon }}"></i>
+                                </a>
+                                {{ end }}
                     </div>
                     <div class="text-center text-ColorMidnightMoss text-opacity-80">
                         &copy; Copyright 2025, All Rights Reserved by Skoolink
@@ -213,7 +190,7 @@
 
  
 <script src="/js/main.js" defer></script> 
- 
+  
     <script>
     document.addEventListener("DOMContentLoaded", () => {
         const fallback = "/img/default.webp"; // Ganti ke default.png jika kamu pakai .png

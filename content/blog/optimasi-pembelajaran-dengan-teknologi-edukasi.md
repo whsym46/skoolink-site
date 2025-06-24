@@ -2,10 +2,11 @@
 title = "Optimasi Pembelajaran dengan Teknologi Edukasi (EdTech)"
 slug = "optimasi-pembelajaran-dengan-teknologi-edukasi"
 date = 2025-06-19T13:00:00
-author = "Ricky Nicol"
+author = "Skoolink"
 image = "/img/blog/blog-main-2.jpg"
 summary = "Bagaimana teknologi edukasi dapat mengubah pengalaman belajar menjadi lebih interaktif dan menyenangkan? Cari tahu di artikel ini."
 categories = ["Pendidikan"]
+tags = ["EdTech", "teknologi edukasi", "Skoolink", "pembelajaran digital", "media interaktif", "personalized learning"]
 +++
 
 Teknologi terus berkembang pesat, dan dunia pendidikan tidak bisa tinggal diam. Salah satu inovasi yang memberi dampak besar adalah **EdTech** (Educational Technology)—penggunaan teknologi untuk meningkatkan efektivitas dan kualitas pembelajaran.
