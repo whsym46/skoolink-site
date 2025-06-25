@@ -1,5 +1,5 @@
 <div
-    class="relative z-10 rounded-tl-[30px] rounded-tr-[30px] bg-[#FFFCEF] lg:rounded-tl-[50px] lg:rounded-tr-[50px] xl:rounded-tl-[100px] xl:rounded-tr-[100px]">
+    class="relative jos z-10 rounded-tl-[30px] rounded-tr-[30px] bg-[#FFFCEF] lg:rounded-tl-[50px] lg:rounded-tr-[50px] xl:rounded-tl-[100px] xl:rounded-tr-[100px]">
     <!-- Footer Area Top -->
     <div class="relative z-10">
         <!-- Footer Top Spacing -->
@@ -168,13 +168,20 @@
 </div>
 
 
+{{/* ========== Load vendor counterup.js as module ========== */}}
+{{ $counterup := resources.Get "js/vendors/counterup.js" | resources.Fingerprint }}
+<script type="module" src="{{ $counterup.RelPermalink }}" integrity="{{ $counterup.Data.Integrity }}" crossorigin="anonymous"></script>
 
+{{/* ========== Load & bundle all other JS files ========== */}}
+{{ $scripts := slice
+  (resources.Get "js/vendors/swiper-bundle.min.js")
+  (resources.Get "js/vendors/fslightbox.js")
+  (resources.Get "js/vendors/jos.min.js")
+  (resources.Get "js/vendors/menu.js")
+  (resources.Get "js/main.js")
+  (resources.Get "js/custom.js")
+}}
 
-<!--Vendor js-->
-<script src="/js/vendors/counterup.js" type="module"></script>
-<script src="/js/vendors/swiper-bundle.min.js"></script>
-<script src="/js/vendors/fslightbox.js"></script>
-<script src="/js/vendors/jos.min.js"></script>
-<script src="/js/vendors/menu.js"></script> 
-<script src="/js/main.js" defer></script> 
-<script src="/js/custom.js" defer></script>
+{{ $bundle := $scripts | resources.Concat "js/bundle.js" | resources.Minify | resources.Fingerprint }}
+
+<script src="{{ $bundle.RelPermalink }}" integrity="{{ $bundle.Data.Integrity }}" crossorigin="anonymous" defer></script>
