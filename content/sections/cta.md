@@ -6,7 +6,7 @@ type = "section"
 
 [params]
 heading = "Sekolah Lebih Modern & Terhubung dengan Skoolink"
-description = "Skoolink adalah solusi digital lengkap untuk manajemen sekolah—mulai dari absensi, SPMB, akademik, keuangan, hingga komunikasi dengan orang tua. Mudah digunakan, fleksibel, dan aman." 
+description = "Skoolink adalah solusi digital lengkap untuk manajemen sekolah—mulai dari absensi, SPMB, akademik, pembayaran online, hingga komunikasi dengan orang tua. Mudah digunakan, fleksibel, dan aman." 
 note = "Gratis selamanya untuk versi dasar."
 
 [[params.buttons]]

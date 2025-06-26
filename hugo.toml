@@ -148,11 +148,15 @@ weight = 80
     extended = false
     min = "0.116.0"
     
- [outputs]
+[outputs]
 home = ["HTML"]
+page = ["HTML"]
+section = ["HTML"]
+
 
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
- 
+
+aliases = ["/about-us/"]
