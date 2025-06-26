@@ -1,5 +1,5 @@
 {{ define "main" }}
-<main class="main-wrapper relative overflow-hidden">
+<div class="main-wrapper relative overflow-hidden">
   <!-- Breadcrumb Section (sementara nonaktif)
   {{/* partial "components/breadcrumb.html" (dict "title" .Title "items" (slice (dict "label" "Home" "url" "/") (dict "label" .Title))) */}}
   -->
@@ -204,7 +204,7 @@
             {{ if eq $btnURL "" }}
             {{ $btnURL = printf "https://wa.me/%s" site.Params.whatsapp }}
             {{ end }}
-          <a href="{{ $btnURL }}" class="btn is-caribbean-green is-transparent btn-animation is-large is-rounded group inline-block">
+          <a href="{{ $btnURL }}" target="_blank" rel="noopener" class="btn is-caribbean-green is-transparent btn-animation is-large is-rounded group inline-block">
             <span>{{ .label }}</span>
           </a>
           {{ end }}
@@ -212,5 +212,5 @@
       </div>
     </div>
   </section>
-</main>
+</div>
 {{ end }}
