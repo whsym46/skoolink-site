@@ -1,9 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./themes/skoolink/**/*.html",
-    "./themes/skoolink/content/**/*.{html,md}",
-    "./themes/skoolink/layouts/**/*.html",
+  content: [ 
     "./layouts/**/*.html",
     "./layouts/partials/**/*.html",
     "./layouts/shortcodes/**/*.html",
@@ -74,21 +71,7 @@ module.exports = {
         scroll: {
           '0%': { transform: 'translateY(-12%)' },
           '100%': { transform: 'translateY(-85%)' },
-        },
-        glitch: {
-          '0%, 100%': { clipPath: 'inset(0 0 0 0)', transform: 'translate(0)' },
-          '20%': { clipPath: 'inset(10% 0 67% 0)', transform: 'translate(-5px, -2px)' },
-          '40%': { clipPath: 'inset(50% 0 30% 0)', transform: 'translate(4px, 2px)' },
-          '60%': { clipPath: 'inset(80% 0 5% 0)', transform: 'translate(-5px, -1px)' },
-          '80%': { clipPath: 'inset(40% 0 40% 0)', transform: 'translate(3px, -1px)' },
-        },
-        glitch2: {
-          '0%, 100%': { clipPath: 'inset(0 0 0 0)', transform: 'translate(0)' },
-          '15%': { clipPath: 'inset(12% 0 40% 0)', transform: 'translate(-5px, -2px)' },
-          '34%': { clipPath: 'inset(50% 0 30% 0)', transform: 'translate(4px, 2px)' },
-          '70%': { clipPath: 'inset(80% 0 5% 0)', transform: 'translate(-5px, -1px)' },
-          '90%': { clipPath: 'inset(80% 0 5% 0)', transform: 'translate(3px, -1px)' },
-        },
+        }, 
       },
       animation: {
         scroll: 'scroll 6s ease-in forwards',

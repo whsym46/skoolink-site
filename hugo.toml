@@ -1,7 +1,6 @@
 baseURL = 'https://skoolink.id/'
 languageCode = 'en-us'
-title = 'Skoolink'
-theme = 'skoolink' 
+title = 'Skoolink' 
 
 [params]
 logo = "/img/logoskoolink.svg"

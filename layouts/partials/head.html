@@ -29,16 +29,6 @@
 <meta name="twitter:description" content="{{ .Params.summary }}">
 <meta name="twitter:image" content="{{ with .Params.image }}{{ . | absURL }}{{ else }}{{ "images/logo_skoolink.og.png" | absURL }}{{ end }}">
 <meta name="twitter:url" content="{{ .Permalink }}">
-
-<!-- Dark Mode Preload -->
-<script>
-  try {
-    if (localStorage.getItem("darkmode") === "true") {
-      document.documentElement.classList.add("dark");
-    }
-  } catch (e) {}
-</script>
-
 <!-- 🔸 Favicon -->
 <link rel="icon" href="/img/favicon.png" type="image/png" />
 <link rel="apple-touch-icon" href="/img/icons/logo_skoolink_square_100.png">
@@ -74,6 +64,4 @@
 
 <!-- 🔸 Opsional: Abaikan style.min.css jika sudah pakai Tailwind -->
 <!-- <link rel="stylesheet" href="/css/style.min.css"> -->
-
-<!-- AOS Animation -->
-<link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+ 

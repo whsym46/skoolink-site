@@ -7,7 +7,7 @@ summary = "Skoolink adalah platform digitalisasi sekolah dengan fitur lengkap un
 image = "/img/about-us/cover.jpg"
 draft = false
 type = "about"
-layout = "single"
+layout = "redirect"
 
 [hero]
 title = "Transformasi Digital untuk Sekolah Masa Kini"
