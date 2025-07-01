@@ -155,6 +155,7 @@
   .is-rounded {
     @apply rounded-[50px];
   }
+  
 }
 
 @keyframes fill-up-initial {
